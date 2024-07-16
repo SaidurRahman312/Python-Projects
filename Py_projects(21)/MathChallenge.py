@@ -1,3 +1,10 @@
+"""
+This script generates a simple arithmetic quiz consisting of 10 problems with random operands (between 3 and 12) 
+and operators (+, -, *). The user is prompted to solve each problem, and the script tracks the number of wrong 
+attempts and the total time taken to complete the quiz. The quiz starts upon pressing Enter, and the results 
+are displayed at the end.
+"""
+
 import random
 import time
 
@@ -34,6 +41,7 @@ end_time = time.time()
 total_time = round((end_time - start_time),2)
 
 print("---------------------------")
+print(f"no. of wrong attemps = {wrong}")
 print(f"Nice work! You finished in {total_time} Seconds!")
 
 
